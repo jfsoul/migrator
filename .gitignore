@@ -1,0 +1,5 @@
+.idea
+output
+*.iml
+*.xlsx
+node_modules

@@ -1,0 +1,15 @@
+{
+  "name": "metapages",
+  "version": "1.0.0",
+  "description": "read in xlsx file, output metadata pages described by it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "xlsx": "^0.8.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
