@@ -1,1 +1,15 @@
-<p>This is a meta page, with id: {{ context.id }}</p>
+<hr>
+<h2>{{context.title}}</h2>
+<p>{{{context.description}}}</p>
+<ul>
+    <li>
+        <p><b>Age group</b>: {{context.levels}}</p>
+    </li>
+    <li>
+        <p><b>Subject</b>: {{context.subject}}</p>
+    </li>
+    <li>
+        <p><b>Topic</b>: {{context.topic}}</p>
+    </li>
+</ul>
+<a href="{{context.contentURL}}">{{context.title}}</a>
