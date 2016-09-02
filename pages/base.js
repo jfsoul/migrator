@@ -18,7 +18,8 @@ class BasePage {
 
         const content = Handlebars.compile(template)({
             partialContext: { context: this.context },
-            bodyPartial: this.templateName
+            bodyPartial: this.templateName,
+            relativeLocation: this.templateName === 'root' ? './' : '../'
         });
 
         fs.writeFileSync(this.location, content);
