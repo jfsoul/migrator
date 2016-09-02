@@ -21,6 +21,7 @@ class Resource {
     }
 
     static get contentRoot() {
+        // TODO: update this?
         return 'http://teachers.theguardian.com.s3-website-eu-west-1.amazonaws.com/content/1/2/3/resources/';
     }
 }
@@ -37,7 +38,7 @@ function parseLevelIds(ids) {
     If the calculated asset path has an error then assume the physical path is a direct link (and use it)
  */
 function generateContentUrl(assetPath, physicalPath) {
-    return assetPath === "#VALUE!" ? physicalPath : Resource.contentRoot + assetPath;
+    return assetPath === "#VALUE!" ? physicalPath : Resource.contentRoot + assetPath.toLowerCase();
 }
 
 module.exports = Resource;
