@@ -21,8 +21,7 @@ class Resource {
     }
 
     static get contentRoot() {
-        // TODO: update this?
-        return 'http://teachers.theguardian.com.s3-website-eu-west-1.amazonaws.com/content/1/2/3/resources/';
+        return '/content/1/2/3/resources/';
     }
 }
 
