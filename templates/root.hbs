@@ -1,9 +1,14 @@
 <h2>Find teaching resources</h2>
+<form action="http://www.google.com/search" target="_blank" onsubmit="this.elements[0].value = 'site:teachers.theguardian.com ' + this.elements[1].value">
+    <input name="q" style="display:none;">
+    <input type="text" placeholder="Search for resources">
+    <input type="submit" value="Search">
+</form>
 <p>{{context.length}} results</p>
 <ul>
     {{#each context}}
         <li>
-            <h3><a href="./teacher-resources/{{id}}/">{{title}}</a></h3>
+            <h3><a href="/teacher-resources/{{id}}/">{{title}}</a></h3>
             <p>{{levels}} Subject: {{subject}}</p>
         </li>
     {{/each}}
